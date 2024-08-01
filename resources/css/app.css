@@ -1,0 +1,16 @@
+@import "swiper/css/bundle";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply tracking-wider text-5xl font-semibold leading-tight;
+    }
+}
+
+@layer utilities {
+    .container {
+        @apply max-w-screen-xl mx-auto px-4;
+    }
+}
