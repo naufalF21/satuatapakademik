@@ -75,8 +75,8 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-base-red md:p-0">Students</a>
+                    <a href="/student"
+                        class="block py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-base-red md:p-0 {{ request()->routeIs('student') ? 'font-semibold text-base-red' : '' }}">Students</a>
                 </li>
                 <li>
                     <a href="/about"
