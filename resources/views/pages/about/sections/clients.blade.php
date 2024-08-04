@@ -2,7 +2,7 @@
     <div class="container p-5 font-medium text-2xl flex flex-col gap-5">
         <h2>Trusted By The Top Companies</h2>
         <div>
-            <swiper-container slides-per-view="9" speed="300" loop="true" autoplay="true">
+            <swiper-container slides-per-view="9" speed="200" loop="true" autoplay="true">
                 <li class="swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                         <path fill="currentColor"

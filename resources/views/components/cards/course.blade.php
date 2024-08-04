@@ -1,9 +1,9 @@
-<div class="max-w-sm bg-white rounded-xl dark:bg-gray-800">
-    <a href="#">
+<div class="bg-white rounded-xl">
+    <a href="/programs/movie/1">
         <img class="rounded-t-lg" src="{{ url('/images/card-image.jpg') }}" alt="card image" />
     </a>
     <div class="p-5 flex flex-col gap-4">
-        <a href="#" class="text-xl font-semibold">Naskah Film <br /> (1x pertemuan / minggu)</a>
+        <span class="text-xl font-semibold">Naskah Film <br /> (1x pertemuan / minggu)</span>
         <div class="flex flex-row gap-2">
             <img src="{{ url('/icons/stars.svg') }}" />
             <label class="text-sm">4.5</label>
@@ -27,6 +27,10 @@
                 5 Modules
             </label>
         </div>
-        <x-button text="Read More" />
+        <div class="w-full flex">
+            <a href="/programs/movie/1"
+                class="text-base-white bg-base-red font-bold rounded-xl px-6 py-3 text-center hover:bg-black hover:text-base-white focus:ring-4 focus:outline-none focus:ring-gray-400 w-full">Read
+                More</a>
+        </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
             <h2 class="text-3xl font-semibold">What They Said</h2>
         </div>
         <div>
-            <swiper-container slides-per-view="3" speed="300" loop="true" autoplay="true" space-between="48">
+            <swiper-container slides-per-view="3" speed="200" loop="true" autoplay="true" space-between="48">
                 <li class="swiper-slide"><x-cards.testimonial /></li>
                 <li class="swiper-slide"><x-cards.testimonial /></li>
                 <li class="swiper-slide"><x-cards.testimonial /></li>
