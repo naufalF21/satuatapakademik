@@ -4,7 +4,7 @@
             <p class="text-xl font-medium">Satu Atap Akademik Mentor</p>
             <h2 class="text-3xl font-semibold">The Amazing Of Our Mentor</h2>
         </div>
-        <div class="grid grid-cols-4 w-full gap-12">
+        <div class="grid md:grid-cols-4 grid-cols-2 w-full gap-6 md:gap-12">
             <x-cards.mentor image="mentor-1.jpg" name="Mr. Lorem Ipsum" category="Movie Class Mentor" />
             <x-cards.mentor image="mentor-1.jpg" name="Mr. Lorem Ipsum" category="Movie Class Mentor" />
             <x-cards.mentor image="mentor-1.jpg" name="Mr. Lorem Ipsum" category="Movie Class Mentor" />

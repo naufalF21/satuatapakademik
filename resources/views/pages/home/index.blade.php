@@ -8,6 +8,10 @@
     @include('pages.home.sections.learn')
     {{-- end lets learn section --}}
 
+    {{-- events --}}
+    @include('pages.home.sections.events')
+    {{-- end events --}}
+
     {{-- kelas populer --}}
     @include('pages.home.sections.kelas')
     {{-- end kelas populer --}}
@@ -21,7 +25,7 @@
     {{-- end akses materi pembelajaran --}}
 
     {{-- clients --}}
-    @include('pages.home.sections.clients')
+    @include('includes.clients')
     {{-- end clients --}}
 
     {{-- join now --}}

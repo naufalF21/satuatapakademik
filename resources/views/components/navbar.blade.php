@@ -4,7 +4,7 @@
             <li class="text-sm">
                 Info@satuatapakademik.com | 0853552222338
             </li>
-            <li class="flex flex-row gap-8">
+            <li class="flex flex-row gap-5 md:gap-8">
                 <a href="https://www.instagram.com/satuatap_akademik/" target="_blank" class="hover:text-base-red">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -27,11 +27,11 @@
         </ul>
     </div>
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ url('/images/logo.png') }}" class="h-16" alt="Flowbite Logo" />
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <div class="flex flex-row gap-5">
+            <div class="hidden md:flex flex-row gap-5">
                 <button type="button"
                     class="text-black font-bold rounded-lg px-4 py-2 text-center hover:text-base-red">
                     Masuk
@@ -85,8 +85,7 @@
                             </li>
                         </ul>
                         <div class="py-1">
-                            <a href="/programs"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All
+                            <a href="/programs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All
                                 Programs</a>
                         </div>
                     </div>
@@ -99,6 +98,13 @@
                     <a href="/about"
                         class="block py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-base-red md:p-0 {{ request()->routeIs('about') ? 'font-semibold text-base-red' : '' }}">About
                         Us</a>
+                </li>
+                <li class="flex flex-row justify-between md:hidden">
+                    <button type="button"
+                        class="text-black font-bold rounded-lg px-4 py-2 text-center hover:text-base-red">
+                        Masuk
+                    </button>
+                    <x-button text="Daftar" />
                 </li>
             </ul>
         </div>

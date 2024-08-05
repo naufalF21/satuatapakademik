@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
     {{-- hero section --}}
-    <div class="container flex flex-row py-14 gap-20">
+    <div class="container flex flex-row py-7 md:py-14 gap-20">
         <div class="flex flex-col w-full gap-5">
             <span class="text-base-red">#SatuAtapAkademik</span>
-            <h1>Solusi Terbaik untuk
+            <h1 class="text-4xl md:text-5xl">Solusi Terbaik untuk
                 Freelance Videografi
                 Pemula</h1>
             <p class="text-lg">
@@ -14,14 +14,14 @@
                 <x-button text="Join Now" />
             </div>
         </div>
-        <div class="flex w-full">
+        <div class="hidden md:flex w-full">
             <img src="{{ url('/images/satu-film.png') }}" class="rounded-xl" alt="Hero Image" />
         </div>
     </div>
     {{-- end hero section --}}
 
     {{-- courses --}}
-    <section class="container flex flex-col gap-5 py-14">
+    <section class="container flex flex-col gap-5 py-7 md:py-14">
         <div class="w-full flex flex-row justify-between">
             <h2 class="text-3xl font-semibold">Kelas Film</h2>
             <div>
@@ -37,14 +37,12 @@
                 <!-- Dropdown menu -->
                 <div id="dropdownDefaultCheckbox"
                     class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow">
-                    <ul class="p-3 space-y-3 text-sm text-gray-700"
-                        aria-labelledby="dropdownCheckboxButton">
+                    <ul class="p-3 space-y-3 text-sm text-gray-700" aria-labelledby="dropdownCheckboxButton">
                         <li>
                             <div class="flex items-center">
                                 <input id="checkbox-item-1" type="checkbox" value=""
                                     class="w-4 h-4 text-base-red bg-gray-100 border-gray-300 rounded focus:ring-red-500">
-                                <label for="checkbox-item-1"
-                                    class="ms-2 text-sm font-medium text-gray-900">Default
+                                <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900">Default
                                     checkbox</label>
                             </div>
                         </li>
@@ -52,16 +50,15 @@
                             <div class="flex items-center">
                                 <input checked id="checkbox-item-2" type="checkbox" value=""
                                     class="w-4 h-4 text-base-red bg-gray-100 border-gray-300 rounded focus:ring-red-500">
-                                <label for="checkbox-item-2"
-                                    class="ms-2 text-sm font-medium text-gray-900">Checked state</label>
+                                <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900">Checked
+                                    state</label>
                             </div>
                         </li>
                         <li>
                             <div class="flex items-center">
                                 <input id="checkbox-item-3" type="checkbox" value=""
                                     class="w-4 h-4 text-base-red bg-gray-100 border-gray-300 rounded focus:ring-red-500">
-                                <label for="checkbox-item-3"
-                                    class="ms-2 text-sm font-medium text-gray-900">Default
+                                <label for="checkbox-item-3" class="ms-2 text-sm font-medium text-gray-900">Default
                                     checkbox</label>
                             </div>
                         </li>
@@ -69,18 +66,18 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-3 w-full gap-10">
-            <x-cards.course />
-            <x-cards.course />
-            <x-cards.course />
-            <x-cards.course />
-            <x-cards.course />
-            <x-cards.course />
+        <div class="grid md:grid-cols-3 w-full gap-10">
+            <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" />
+            <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" />
+            <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" />
+            {{-- <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" />
+            <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" />
+            <x-cards.course title="Cinemas Class" rating="4.4" hours="12" modules="24" /> --}}
         </div>
     </section>
     {{-- end courses --}}
 
     {{-- pagination --}}
-    <x-pagination />
+    {{-- <x-pagination /> --}}
     {{-- end pagination --}}
 @endsection

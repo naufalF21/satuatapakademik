@@ -1,11 +1,11 @@
 <footer>
-    <div class="container py-10 flex flex-row w-full justify-between">
-        <div class="w-full">
+    <div class="container py-10 flex flex-col md:flex-row w-full md:justify-between gap-10 items-center md:items-start">
+        <div class="md:w-full flex items-center">
             <a href="/">
-                <img src="{{ url('/images/logo.png') }}" class="w-32" />
+                <img src="{{ url('/images/logo.png') }}" class="w-40" />
             </a>
         </div>
-        <ul class="w-full flex flex-col gap-5">
+        <ul class="w-full md:flex flex-col gap-5 hidden">
             <li class="text-lg font-semibold">Our Program Categories</li>
             <li><a href="/programs/movie" class="hover:text-base-red">Film Class</a></li>
             <li>IT Class</li>
@@ -13,15 +13,32 @@
             <li>Content Creator Class</li>
             <li>Broadcasting Class</li>
         </ul>
-        <ul class="w-full flex flex-col gap-5">
+        <ul class="w-full md:flex flex-col gap-5 hidden">
             <li class="text-lg font-semibold">Explore</li>
             <li><a href="/" class="hover:text-base-red">Home</a></li>
-            <li>Programs</li>
+            <li><a href="/programs" class="hover:text-base-red">Programs</a></li>
             <li><a href="/student" class="hover:text-base-red">Students</a></li>
             <li><a href="/about" class="hover:text-base-red">About Us</a></li>
         </ul>
+        <div class="md:hidden flex flex-row justify-between w-full">
+            <ul class="flex flex-col gap-5">
+                <li class="text-lg font-semibold">Our Program Categories</li>
+                <li><a href="/programs/movie" class="hover:text-base-red">Film Class</a></li>
+                <li>IT Class</li>
+                <li>Motion Graphic</li>
+                <li>Content Creator Class</li>
+                <li>Broadcasting Class</li>
+            </ul>
+            <ul class="flex flex-col gap-5">
+                <li class="text-lg font-semibold">Explore</li>
+                <li><a href="/" class="hover:text-base-red">Home</a></li>
+                <li><a href="/programs" class="hover:text-base-red">Programs</a></li>
+                <li><a href="/student" class="hover:text-base-red">Students</a></li>
+                <li><a href="/about" class="hover:text-base-red">About Us</a></li>
+            </ul>
+        </div>
         <ul class="w-full flex flex-col gap-5">
-            <li class="text-lg font-semibold">Satu Atap Akademik</li>
+            <li class="text-lg font-semibold">Satu Atap Akademik Official</li>
             <li>Jl. Patimura No.329, Bugul Kidul, Kec. Bugul Kidul, Kota Pasuruan, Jawa Timur 67121</li>
             <li><a href="/about"><x-button text="Contact Us" /></a></li>
         </ul>
@@ -29,9 +46,9 @@
     <div class="py-5 bg-base-black text-base-white">
         <ul class="container flex flex-row w-full justify-between">
             <li class="text-sm">
-                © Copyright 2022 by <span class="text-base-red">SATU ATAP AKADEMIK</span>
+                Copyright © 2024 | <span class="text-base-white">SAA DIGITAL SCHOOL</span>
             </li>
-            <li class="flex flex-row gap-8">
+            <li class="flex flex-row gap-5 md:gap-8">
                 <a href="https://www.instagram.com/satuatap_akademik/" class="hover:text-base-red" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"

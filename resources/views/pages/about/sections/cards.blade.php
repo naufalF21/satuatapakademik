@@ -1,5 +1,5 @@
-<div class="container py-14">
-    <ul class="flex flex-row justify-between w-full gap-10">
+<div class="container py-7 md:py-14">
+    <ul class="flex md:flex-row flex-col justify-between w-full gap-10">
         <li class="w-full">
             <div class="bg-base-red border text-white rounded-xl flex flex-col text-center items-center gap-5 p-7">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">

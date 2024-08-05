@@ -1,9 +1,9 @@
-<div class="container flex flex-row w-full justify-between gap-24 py-16">
-    <div class="w-full">
+<div class="container flex flex-row w-full justify-between gap-24 py-8 md:py-16">
+    <div class="w-full hidden md:block">
         <img src="{{ url('/images/why-us.jpg') }}" class="rounded-xl" alt="why us image" />
     </div>
     <div class="w-full flex flex-col gap-7 justify-center">
-        <span class="text-xl text-base-red font-medium">Overview</span>
+        {{-- <span class="text-xl text-base-red font-medium">Overview</span> --}}
         <h2 class="text-4xl leading-tight font-semibold">Kenapa Harus Bergabung Dengan <span class="text-base-red">Satu
                 Atap Akademik</span>?</h2>
         <ul class="flex flex-row justify-between gap-5">

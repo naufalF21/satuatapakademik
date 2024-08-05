@@ -13,7 +13,7 @@
     {{-- end cards --}}
 
     {{-- clients --}}
-    @include('pages.about.sections.clients')
+    @include('includes.clients')
     {{-- end clients --}}
 
     {{-- mentors --}}

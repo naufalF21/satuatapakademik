@@ -13,4 +13,4 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/student', [StudentController::class, 'index'])->name('student');
 Route::get('/programs', [ProgramsController::class, 'index'])->name('programs');
 Route::get('/programs/movie', [MovieProgramController::class, 'index'])->name('programs.movie');
-Route::get('/programs/movie/{id}', [MovieProgramController::class, 'detail'])->name('programs.movie.detail');
+// Route::get('/programs/movie/{id}', [MovieProgramController::class, 'detail'])->name('programs.movie.detail');
